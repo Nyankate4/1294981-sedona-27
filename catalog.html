@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav>
-      <a href="#"><img src="img/logo.png" alt="Логотип"></a></li>
+      <a href="#"><img src="img/logo.png" alt="Логотип"></a>
       <ul>
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
@@ -19,6 +19,38 @@
     </nav>
   </header>
   <main>
+    <form action="post">
+      <fieldset>
+        <legend>Инфраструктура</legend>
+        <input class="checkbox-catalog" type="checkbox" id="pool" name="pool" checked>
+        <label class="label-catalog" for="pool">Бассейн</label>
+        <input class="checkbox-catalog" type="checkbox" id="parking" name="parking">
+        <label class="label-catalog" for="parking">Парковка</label>
+        <input class="checkbox-catalog" type="checkbox" id="wi-fi" name="wi-fi">
+        <label class="label-catalog" for="wi-fi">Wi-fi</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Тип жилья</legend>
+        <input class="checkbox-catalog" type="checkbox" id="hotel" name="hotel" checked>
+        <label class="label-catalog" for="hotel">Гостиница</label>
+        <input class="checkbox-catalog" type="checkbox" id="motel" name="motel" checked>
+        <label class="label-catalog" for="motel">Мотель</label>
+        <input class="checkbox-catalog" type="checkbox" id="apartments" name="apartments" checked>
+        <label class="label-catalog" for="apartments">Апартаменты</label>
+      </fieldset>
+      <div class="Cost">
+        <fieldset>
+          <legend>Стоимость в сутки</legend>
+          <label for="for">От 0</label>
+          <input type="text" id="for" name="for">
+          <label for="before">До 3000</label>
+          <input type="text" id="before" name="before">
+          0<input type="range" min="0" max="3000" step="10">3000
+        </fieldset>
+        <button type="submit">Показать</button>
+      </div>
+    </form>
     <section>
       <a href="#">
         <img src="img/Layer21.png" alt="Amara Resort & SPA" />
@@ -56,10 +88,10 @@
           Villas At Poco Diablo
         </a>
       </h3>
-          <p>Аппартаменты от 2000₽</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг: 9,2</p>
+      <p>Апартаменты от 2000₽</p>
+      <a href="#">Подробнее</a>
+      <a href="#">Забронировать</a>
+      <p>Рейтинг: 9,2</p>
     </section>
   </main>
   <footer>
