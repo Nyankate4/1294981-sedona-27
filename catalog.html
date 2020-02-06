@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body>
   <header>
-    <a href="#"><img src="img/logo.png" alt="Логотип"></a>
+    <a href="#"><img src="img/svg-sedona/logo-sedona.svg" alt="Логотип"></a>
     <nav>
       <ul>
         <li><a href="#">Информация</a></li>
@@ -23,20 +24,26 @@
       <fieldset>
         <legend>Инфраструктура</legend>
         <input class="checkbox-catalog" type="checkbox" id="pool" name="pool" checked>
+        <img src="img/svg-sedona/checkbox-on.svg" alt="Включенный чекбокс">
         <label class="label-catalog" for="pool">Бассейн</label>
         <input class="checkbox-catalog" type="checkbox" id="parking" name="parking">
+        <img src="img/svg-sedona/checkbox-off.svg" alt="Выключенный чекбокс">
         <label class="label-catalog" for="parking">Парковка</label>
         <input class="checkbox-catalog" type="checkbox" id="wi-fi" name="wi-fi">
+        <img src="img/svg-sedona/checkbox-off.svg" alt="Выключенный чекбокс">
         <label class="label-catalog" for="wi-fi">Wi-fi</label>
       </fieldset>
 
       <fieldset>
         <legend>Тип жилья</legend>
         <input class="checkbox-catalog" type="checkbox" id="hotel" name="hotel" checked>
+        <img src="img/svg-sedona/checkbox-on.svg" alt="Включенный чекбокс">
         <label class="label-catalog" for="hotel">Гостиница</label>
         <input class="checkbox-catalog" type="checkbox" id="motel" name="motel" checked>
+        <img src="img/svg-sedona/checkbox-on.svg" alt="Включенный чекбокс">
         <label class="label-catalog" for="motel">Мотель</label>
         <input class="checkbox-catalog" type="checkbox" id="apartments" name="apartments" checked>
+        <img src="img/svg-sedona/checkbox-on.svg" alt="Включенный чекбокс">
         <label class="label-catalog" for="apartments">Апартаменты</label>
       </fieldset>
       <div class="Cost">
@@ -46,11 +53,22 @@
           <input type="text" id="for" name="for" value="0">
           <label for="before">До</label>
           <input type="text" id="before" name="before" value="3000">
+          <img src="img/svg-sedona/filter-button.svg" alt="filter-button">
           <input type="range" min="0" max="3000" step="10">
+          <img src="img/svg-sedona/filter-button.svg" alt="filter-button">
         </fieldset>
         <button type="submit">Показать</button>
       </div>
     </form>
+    <section>
+      <h3>Найдено: 3</h3>
+      <h4>Сортировка:</h4>
+      <a href="#">По цене</a>
+      <a href="#">По типу</a>
+      <a href="#">По рейтингу</a>
+      <a href="#"><img src="img/svg-sedona/icon-up-dir.svg" alt=""></a>
+      <a href="#"><img src="img/svg-sedona/icon-down-dir.svg" alt=""></a>
+    </section>
     <section>
       <a href="#">
         <img src="img/Layer21.png" alt="Amara Resort & SPA" />
@@ -63,6 +81,10 @@
       <p>Гостиница от 4000₽</p>
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
+      <img src="img/svg-sedona/star.svg" alt="star">
+      <img src="img/svg-sedona/star.svg" alt="star">
+      <img src="img/svg-sedona/star.svg" alt="star">
+      <img src="img/svg-sedona/star.svg" alt="star">
       <p>Рейтинг: 8,5</p>
     </section>
     <section>
@@ -77,6 +99,9 @@
       <p>Мотель от 3000₽</p>
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
+      <img src="img/svg-sedona/star.svg" alt="star">
+      <img src="img/svg-sedona/star.svg" alt="star">
+      <img src="img/svg-sedona/star.svg" alt="star">
       <p>Рейтинг: 8,9</p>
     </section>
     <section>
@@ -91,6 +116,8 @@
       <p>Апартаменты от 2000₽</p>
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
+      <img src="img/svg-sedona/star.svg" alt="star">
+      <img src="img/svg-sedona/star.svg" alt="star">
       <p>Рейтинг: 9,2</p>
     </section>
   </main>
@@ -98,13 +125,14 @@
     <p><a href="#">#VisitSedona</a></p>
     <div>
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютуб</a></li>
+        <li><a href="#"><img src="img/svg-sedona/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="#"><img src="img/svg-sedona/fb-icon.svg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="img/svg-sedona/youtube.svg" alt="Youtube"></a></li>
       </ul>
     </div>
     <div>
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-sedona/logo-htmlacademy.svg"
+            alt="HTML Academy"></a></p>
     </div>
   </footer>
 </body>
