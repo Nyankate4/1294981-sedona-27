@@ -46,7 +46,7 @@
       <section>
         <ol>
           <li>
-            <h3>Настоящий городок</h3>
+            <h3>Настоящий городок — №1 —</h3>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             <img
               src="img/feature-picture.png"
@@ -62,7 +62,7 @@
                   height="72"
                   alt="Жильё"
                 />
-                <h3>Жильё</h3>
+                <h4>Жильё</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
               </li>
               <li>
@@ -72,7 +72,7 @@
                   height="70"
                   alt="Еда"
                 />
-                <h3>Еда</h3>
+                <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li>
@@ -82,31 +82,32 @@
                   height="76"
                   alt="Сувениры"
                 />
-                <h3>Сувениры</h3>
+                <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <img
+          
+          <li>
+            <img
             src="img/layer-5.png"
             width="800"
             height="256"
-            alt="Фото каньон"
+            alt="Фото каньона"
           />
-          <li>
-            <h3>Там есть мост дьявола</h3>
+            <h3>Там есть мост дьявола — №2 — </h3>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li>
-            <h3>Небольшая площадь</h3>
+            <h3>Небольшая площадь — №3 —</h3>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li>
-            <h3>Красивая дорога</h3>
+            <h3>Красивая дорога — №4 — </h3>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li>
-            <h3>Мало туристов</h3>
+            <h3>Мало туристов — №5 — </h3>
             <p>Большинство едет в гранд каньон и толпятся там</p>
           </li>
         </ol>
@@ -118,8 +119,13 @@
           предложения гостиниц в Седоне
         </p>
       </article>
+      <div role="dialog"
+      id="dialog1"
+      aria-labelledby="dialog1_label"
+      aria-modal="true" 
+      class="">
       <form action="#" method="get">
-        <h3>Поиск гостиницы в Седоне</h3>
+        <h3 id="dialog1_label" class="dialog_label">Поиск гостиницы в Седоне</h3>
         <div class="search-hotel">
           <label class="main-label" for="checkin">Дата заезда:</label>
           <input class="main-input" type="date" name="checkin" id="checkin" />
@@ -142,7 +148,7 @@
         </div>
         <div class="adult">
           <label class="main-label" for="adult">Взрослые:</label>
-          <button name="minus" type="button" class="minus">-</button>
+          <button name="minus" type="button" class="minus" title="Уменьшить количество взрослых">-</button>
           <input
             class="main-input"
             type="number"
@@ -151,11 +157,11 @@
             min="0"
             max="10"
           />
-          <button name="plus" type="button" class="plus">+</button>
+          <button name="plus" type="button" class="plus" title="Увеличить количество взрослых">+</button>
         </div>
         <div class="children">
           <label class="main-label" for="children">Дети:</label>
-          <button name="minus" type="button" class="minus">-</button>
+          <button name="minus" type="button" class="minus" title="Уменьшить количество детей">-</button>
           <input
             class="main-input"
             type="number"
@@ -164,12 +170,13 @@
             min="0"
             max="10"
           />
-          <button name="plus" type="button" class="plus">+</button>
+          <button name="plus" type="button" class="plus" title="Увеличить количество детей"</button>+</button>
         </div>
         <div class="search-button">
-          <input type="submit" value="Найти" />
+          <button>Найти</button>
         </div>
       </form>
+    </div>
       <img src="img/map.png" width="1200" height="593" alt="Карта" />
     </main>
     <footer>
