@@ -1,4 +1,59 @@
 body {
     margin: 0;
     background-color:#87CEEB;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+    color: #000;
+  background-image: url("");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none; 
+   }
+form {
+ display: none;
+}
+
+nav {
+font-size: 14px;
+}
+
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    text-indent: 147px; 
+  }
+
+.welcome {
+    text-align: center;
+}
+
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    background-color:#81b3d2;
+  }
+  .social-button:hover,
+  .social-button:focus {
+    background-color: #669ec0;
+  }
+
+.social-button:active{
+   
+}
+.footer-social ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 156px;
 }
