@@ -124,13 +124,12 @@
       <div role="dialog"
       id="dialog1"
       aria-labelledby="dialog1_label"
-      aria-modal="true" 
-      class="">
+      aria-modal="true">
       <form action="#" method="get">
         <h3 id="dialog1_label" class="dialog_label">Поиск гостиницы в Седоне</h3>
         <div class="search-hotel">
           <label class="main-label" for="checkin">Дата заезда:</label>
-          <input class="main-input" type="date" name="checkin" id="checkin" />
+          <input class="main-input" type="date" name="checkin" id="checkin"/>
           <img
             src="img/svg-sedona/calendar.svg"
             width="21"
@@ -140,7 +139,7 @@
         </div>
         <div class="search-hotel">
           <label class="main-label" for="checkout">Дата выезда:</label>
-          <input class="main-input" type="date" name="checkout" id="checkout" />
+          <input class="main-input" type="date" name="checkout" id="checkout"/>
           <img
             src="img/svg-sedona/calendar.svg"
             width="21"
@@ -150,7 +149,7 @@
         </div>
         <div class="adult">
           <label class="main-label" for="adult">Взрослые:</label>
-          <button name="minus" type="button" class="minus" title="Уменьшить количество взрослых">-</button>
+          <button name="minus" type="button" class="minus" aria-label="Уменьшить количество взрослых">-</button>
           <input
             class="main-input"
             type="number"
@@ -159,11 +158,11 @@
             min="0"
             max="10"
           />
-          <button name="plus" type="button" class="plus" title="Увеличить количество взрослых">+</button>
+          <button name="plus" type="button" class="plus" aria-label="Увеличить количество взрослых">+</button>
         </div>
         <div class="children">
           <label class="main-label" for="children">Дети:</label>
-          <button name="minus" type="button" class="minus" title="Уменьшить количество детей">-</button>
+          <button name="minus" type="button" class="minus" aria-label="Уменьшить количество детей">-</button>
           <input
             class="main-input"
             type="number"
@@ -172,10 +171,10 @@
             min="0"
             max="10"
           />
-          <button name="plus" type="button" class="plus" title="Увеличить количество детей"</button>+</button>
+          <button name="plus" type="button" class="plus" aria-label="Увеличить количество детей">+</button>
         </div>
         <div class="search-button">
-          <button>Найти</button>
+          <button type="button" name="search-button">Найти</button>
         </div>
       </form>
     </div>
