@@ -188,6 +188,9 @@ text-align: center;
   color:#ffffff;
 }
 
+input {
+  display: none;
+}
 
 svg {
   display: none;
