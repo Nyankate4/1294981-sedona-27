@@ -17,6 +17,9 @@ a {
 } */
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   font-weight: bold;
   line-height: 1.86;
   text-align: center;
@@ -30,6 +33,12 @@ color: #81b3d2;
 
 .navigation:active {
 color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation.nav-action {
+  color: #766357;
+  pointer-events: none;
+
 }
 
 .welcome {
@@ -226,19 +235,20 @@ color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
 
-svg {
+.form svg {
   fill: #ffffff;
+  display: none;
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
 }
 
@@ -270,6 +280,12 @@ input:disabled~svg {
   border-bottom: 1px dashed #81b3d2;
 }
 
+.sort-by.active {
+  color: #81b3d2;
+  border-bottom: none;
+  pointer-events: none;
+}
+
 .sort-by:hover,
 .sort-by:focus {
   color: #81b3d2;
@@ -282,6 +298,15 @@ input:disabled~svg {
 
 .icon-up-down {
   fill: #cacaca;
+}
+
+.icon-up-down:hover,
+.icon-up-down:focus {
+  fill: #000000;;
+}
+
+.icon-up-down:active {
+  fill: #81b3d2;
 }
 
 .more-details {
