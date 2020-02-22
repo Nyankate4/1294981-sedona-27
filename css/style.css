@@ -3,7 +3,7 @@ body {
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  background-color: #7fc7ff
+  /* background-color: #7fc7ff */
 }
 
 a {
@@ -11,22 +11,25 @@ a {
   color: #000;
 }
 
-li {
-  list-style: none;
-}
 
 /* form {
   display: none;
 } */
 
-
 .site-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  text-indent: 147px;
   font-weight: bold;
   line-height: 1.86;
   text-align: center;
+  list-style: none
+}
+
+.navigation:hover,
+.navigation:focus {
+color: #81b3d2;
+}
+
+.navigation:active {
+color: rgba(0, 0, 0, 0.3);
 }
 
 .welcome {
@@ -45,37 +48,45 @@ li {
   text-align: center;
 }
 
+.numbers {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.reasons-list {
+  list-style: none;
+}
+
+.reasons-list-img {
+  list-style: none;
+}
+
 .five-reasons {
   line-height: 1.86;
   text-align: center;
   color: #333333;
+
 }
 
 .reason-1-2 {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1.5;
-  text-align: center;
-  color:#ffffff;
+  color: #ffffff;
 }
 
-.reason-description-1-2 {
-  line-height: 1.5;
-  text-align: center;
-  color:#ffffff;
-}
-
-.reason-3-4-5 {
+.reasons {
   font-size: 21px;
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
 }
 
-.reason-description-3-4-5 {
+.reasons-description {
   line-height: 1.5;
   text-align: center;
   color: #333333;
+}
+
+.reason-description-1-2 {
+  color: #ffffff;
 }
 
 .interesting {
@@ -95,25 +106,49 @@ li {
   font-size: 21px;
   font-weight: bold;
   text-align: center;
-  
 }
+
 .description {
   line-height: 1.5;
   text-align: center;
   color: #333333;
 }
+
 .housing-food-souvenirs-icon {
-text-align: center;
+  text-align: center;
 }
 
 .search-button {
-  width: 458px;
-  height: 58px;
+  background-color: #81b3d2;
+  border: 0;
+  padding: 17px 197px 22px 196px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
 }
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #669ec0;
+  cursor: pointer;
+}
+
+.search-button:active {
+  background-color: #5496bd;
+}
+
+.search-button:active {
+  opacity: 0.3;
+}
+
 .footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.social-list {
+  list-style: none;
 }
 
 .social-button {
@@ -151,7 +186,6 @@ text-align: center;
   fill: #bdbbbc;
 }
 
-
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
@@ -185,42 +219,42 @@ text-align: center;
   font-weight: bold;
   line-height: 1.31;
   text-align: left;
-  color:#ffffff;
+  color: #ffffff;
 }
 
-input {
-  display: none;
+.checkbox-name {
+  color: #ffffff;
 }
 
 svg {
-  display: none;
   fill: #ffffff;
 }
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
-input ~ .icon-unchecked {
+input~.icon-unchecked {
   display: inline;
 }
 
-input:checked ~ .icon-checked {
+input:checked~.icon-checked {
   display: inline;
 }
 
-input:checked ~ .icon-unchecked {
+input:checked~.icon-unchecked {
   display: none;
 }
 
-input:disabled ~ svg {
+input:disabled~svg {
   opacity: 0.3;
 }
 
@@ -229,11 +263,21 @@ input:disabled ~ svg {
 }
 
 .sort-by {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
   font-size: 12px;
   line-height: 1.5;
   text-align: left;
   border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-by:hover,
+.sort-by:focus {
+  color: #81b3d2;
+}
+
+.sort-by:active {
+  color: #000000;
+  border-bottom: none;
 }
 
 .icon-up-down {
@@ -247,6 +291,15 @@ input:disabled ~ svg {
   line-height: 1.5;
   color: #ffffff;
 }
+
+.hostel-name:hover,
+.hostel-name:focus {
+color: #81b3d2;
+}
+
+.hostel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+  }
 
 .more-details:hover,
 .more-details:focus {

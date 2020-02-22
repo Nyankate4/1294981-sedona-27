@@ -14,10 +14,10 @@
     <a href="#"><img src="img/svg-sedona/logo-sedona.svg" width="140" height="71" alt="Логотип" /></a>
     <nav>
       <ul class="site-navigation">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="#" class="navigation">Информация</a></li>
+        <li><a href="#" class="navigation">Фото и видео</a></li>
+        <li><a href="#" class="navigation">Карта штата</a></li>
+        <li><a href="#" class="navigation">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -32,12 +32,13 @@
       <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем град каньон!</p>
     </article>
     <section>
-      <ol>
+      <ol class="reasons-list">
         <li>
-          <h3 class="reason-1-2">Настоящий городок — №1 —</h3>
-          <p class="reason-description-1-2">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <h3 class="reasons reason-1-2">Настоящий городок <span class="numbers">— №1 —</span></h3>
+          <p class="reasons-description reason-description-1-2">Седона - не аттракцион для туристов, там течёт своя
+            жизнь</p>
           <img src="img/feature-picture.png" width="800" height="256" alt="Фото настоящего городка" />
-          <ul>
+          <ul class="reasons-list-img">
             <li>
               <img class="housing-food-souvenirs-icon" src="img/svg-sedona/icon-1.svg" width="75" height="72"
                 alt="Жильё" />
@@ -61,20 +62,20 @@
 
         <li>
           <img src="img/layer-5.png" width="800" height="256" alt="Фото каньона" />
-          <h3 class="reason-1-2">Там есть мост дьявола — №2 — </h3>
-          <p class="reason-description-1-2">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <h3 class="reasons reason-1-2">Там есть мост дьявола <span class="numbers">— №2 —</span> </h3>
+          <p class="reasons-description reason-description-1-2">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </li>
         <li>
-          <h3 class="reason-3-4-5">Небольшая площадь — №3 —</h3>
-          <p class="reason-description-3-4-5">Все достопримечательности находятся очень близко</p>
+          <h3 class="reasons">Небольшая площадь <span class="numbers">— №3 —</span></h3>
+          <p class="reasons-description">Все достопримечательности находятся очень близко</p>
         </li>
         <li>
-          <h3 class="reason-3-4-5">Красивая дорога — №4 — </h3>
-          <p class="reason-description-3-4-5">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <h3 class="reasons">Красивая дорога <span class="numbers">— №4 —</span> </h3>
+          <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
-          <h3 class="reason-3-4-5">Мало туристов — №5 — </h3>
-          <p class="reason-description-3-4-5">Большинство едет в гранд каньон и толпятся там</p>
+          <h3 class="reasons">Мало туристов <span class="numbers">— №5 —</span> </h3>
+          <p class="reasons-description">Большинство едет в гранд каньон и толпятся там</p>
         </li>
       </ol>
     </section>
@@ -110,8 +111,8 @@
           <input class="main-input" type="number" placeholder="0" id="children" min="0" max="10" />
           <button name="plus" type="button" class="plus" aria-label="Увеличить количество детей">+</button>
         </div>
-        <div class="search-button">
-          <button type="button" name="search-button">Найти</button>
+        <div>
+          <button class="search-button" type="button" name="search-button">Найти</button>
         </div>
       </form>
     </div>
@@ -119,11 +120,11 @@
   </main>
   <footer class="footer">
     <div>
-    <p class="contacts"><a href="#">#VisitSedona</a></p>
-    <p class="contacts">Тел: +7(495) 666-02-66</p>
+      <p class="contacts"><a href="#">#VisitSedona</a></p>
+      <p class="contacts">Тел: +7(495) 666-02-66</p>
     </div>
     <div class="footer-social">
-      <ul>
+      <ul class="social-list">
         <li>
           <a class="social-button" href="#"><img class="social_icon" src="img/svg-sedona/twitter.svg" width="17"
               height="15" alt="Twitter" /></a>
