@@ -24,7 +24,8 @@
   <main>
     <div class="welcome"><img class="welcome_img" src="img/svg-sedona/intro-welcome.svg" width="459" height="353"
         alt="Добро пожаловать!" />
-      <img src="img/svg-sedona/intro-mask.svg" width="100%" alt="Маска" /></div>
+      <img class="mask" src="img/svg-sedona/intro-mask.svg" width="100%" alt="Маска" />
+    </div>
     <article>
       <h3 class="welcome-heading">
         Седона - небольшой городок в Аризоне, <br> заслуживающий большего!
@@ -82,13 +83,13 @@
     <article>
       <h3 class="interesting">Заинтересовались?</h3>
       <p class="interesting-description">
-        Укажите предполагаемые даты поезки, и мы покажем Вам лучшие
+        Укажите предполагаемые даты поезки,<br> и мы покажем Вам лучшие
         предложения гостиниц в Седоне
       </p>
     </article>
     <div role="dialog" id="dialog1" aria-labelledby="dialog1_label" aria-modal="true">
       <form action="#" method="get">
-        <h3 id="dialog1_label" class="dialog_label">Поиск гостиницы в Седоне</h3>
+        <button class="popup-button" type="button" name="popup-button">Поиск гостиницы в Седоне</button>
         <div class="search-hotel">
           <label class="main-label" for="checkin">Дата заезда:</label>
           <input class="main-input" type="date" name="checkin" id="checkin" />
