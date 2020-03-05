@@ -152,12 +152,10 @@ a {
 
 .number-1-1 {
   padding: 46px 60px 64px;
-  
 }
 
 .number-2 {
   padding: 49px 49px 65px 48px;
-  
 }
 
 .reasons-div {
@@ -226,7 +224,7 @@ a {
   display: block;
   position: relative;
   text-align: center;
-  margin: 56px auto 52px;
+  margin: 56px auto 0 52px;
 }
 
 .interesting {
@@ -501,6 +499,8 @@ a {
 }
 
 .footer {
+  background-color: #fff;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -581,21 +581,175 @@ a {
   margin-right: 8px;
 }
 
+
 .form {
+  display: flex;
+  padding: 31px 73px;
   background-image: url(../img/background.png);
   background-size: 100%;
 }
 
 .fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inf {
+  margin-right: 115px;
+}
+
+.type {
+  margin-right: 394px;
+}
+
+.checkbox-name {
+  display: flex;
+  align-items: center;
+}
+
+.chb {
+  margin-bottom: 23px;
 }
 
 .infrastructure-type {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.31;
-  text-align: left;
+    margin-bottom: 9px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.filter-range {
+  width: 330px;
   color: #ffffff;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+  
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 .checkbox-name {
@@ -607,6 +761,7 @@ a {
   display: none;
 }
 
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -617,6 +772,11 @@ a {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+.icon-checked,
+.icon-unchecked {
+  margin-right: 14px;
 }
 
 .checkbox ~ .icon-unchecked {
@@ -639,6 +799,10 @@ a {
   outline: 1px solid blue;
 }
 
+
+
+
+
 .show-button {
   padding: 11px 34px;
   border: solid 2px #ffffff;
@@ -659,7 +823,29 @@ a {
 .sorting {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 32px 72px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.main-sorting {
+  display: flex;
+
+}
+
+.sorting h3 {
+  padding-right: 49px;
+  margin: 0;
+}
+
+.sorting span {
+  padding-top: 3px;
+  padding-right: 40px;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px 
+}
+
 
 .sort-by {
   color: rgba(0, 0, 0, 0.3);
@@ -667,6 +853,11 @@ a {
   line-height: 1.5;
   text-align: left;
   border-bottom: 1px dashed #81b3d2;
+  padding-right: 33px;
+}
+
+.by-rating {
+  padding: 0;
 }
 
 .sort-by.active {
@@ -696,6 +887,30 @@ a {
 
 .icon-up-down:active {
   fill: #81b3d2;
+}
+
+.sorting-hotels {
+  display: flex;
+  padding: 30px 72px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sorting-hotels a {
+  padding-right: 30px;
+}
+
+.sorting-hotels  {
+  padding-right: 30px;
+}
+
+.main-hotels {
+  display: flex;
+}
+
+.amara {
+
 }
 
 .more-details {
@@ -750,9 +965,15 @@ a {
 }
 
 .rating {
+  margin: 0;
   padding: 0 13px 0 16px;
   line-height: 26px;
   text-align: center;
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.footer-catalog {
+  position: static;
+  opacity: 1;
 }
