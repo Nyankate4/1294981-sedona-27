@@ -6,7 +6,10 @@ body {
   background-color: #f2f2f2;
 }
 
-* {
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -86,6 +89,7 @@ a {
 
 .welcome {
   text-align: center;
+  background-color: #5496bd;
   background-image: url(../img/background-photo.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -122,6 +126,8 @@ a {
 }
 
 .reasons-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -140,7 +146,6 @@ a {
   background-color: #81b3d2;
   height: 256px;
 }
-
 
 .number-main img {
   flex-grow: 1;
@@ -206,25 +211,23 @@ a {
   flex-grow: 1;
 }
 
-.reasons-3-4-5 {
-  display: flex;
+
+.reasons-3,
+.reasons-4,
+.reasons-5 {
   background-color: #eeeeee;
   padding: 50px 77px 64px 95px;
 }
 
-.reasons-3 {
-  margin-right: 166px;
-}
-
-.reasons-4 {
-  margin-right: 166px;
+.main-reasons {
+  flex-basis: 33.33%;
 }
 
 .int {
   display: block;
   position: relative;
   text-align: center;
-  margin: 56px auto 0 52px;
+  margin: 56px auto 52px;
 }
 
 .interesting {
@@ -581,13 +584,13 @@ a {
   margin-right: 8px;
 }
 
-
 .form {
   display: flex;
   padding: 31px 73px;
+  background-color: #5496bd;
   background-image: url(../img/background.png);
   background-size: 100%;
-  background-position:0 50%;
+  background-position: 0 50%;
 }
 
 .fieldset {
@@ -783,7 +786,6 @@ a {
   display: none;
 }
 
-
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -821,10 +823,6 @@ a {
   outline: 1px solid blue;
 }
 
-
-
-
-
 .show-button {
   padding: 11px 34px;
   border: solid 2px #ffffff;
@@ -851,7 +849,6 @@ a {
 
 .main-sorting {
   display: flex;
-
 }
 
 .sorting h3 {
@@ -864,9 +861,8 @@ a {
   padding-right: 40px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 12px
+  font-size: 12px;
 }
-
 
 .sort-by {
   color: rgba(0, 0, 0, 0.3);
