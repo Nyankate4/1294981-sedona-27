@@ -6,10 +6,12 @@ body {
   background-color: #f2f2f2;
 }
 
-
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -211,7 +213,6 @@ a {
   flex-grow: 1;
 }
 
-
 .reasons-3,
 .reasons-4,
 .reasons-5 {
@@ -358,6 +359,19 @@ a {
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   border: none;
+}
+
+.main-input:hover {
+  background-color: #ebebeb;
+}
+
+.main-input:focus {
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+}
+
+.main-input::placeholder {
+  color: #000;
 }
 
 .wrapper-input {
@@ -616,6 +630,12 @@ a {
   margin-bottom: 23px;
 }
 
+.main-checkbox {
+  width: 27px;
+  height: 23px;
+  margin-right: 13px;
+}
+
 .infrastructure-type {
   margin-bottom: 9px;
   color: #ffffff;
@@ -803,23 +823,23 @@ a {
   margin-right: 14px;
 }
 
-.checkbox~.icon-unchecked {
+.checkbox ~ .icon-unchecked {
   display: inline;
 }
 
-.checkbox:checked~.icon-checked {
+.checkbox:checked ~ .icon-checked {
   display: inline;
 }
 
-.checkbox:checked~.icon-unchecked {
+.checkbox:checked ~ .icon-unchecked {
   display: none;
 }
 
-.checkbox:disabled~svg {
+.checkbox:disabled ~ svg {
   opacity: 0.3;
 }
 
-.checkbox:focus~svg {
+.checkbox:focus ~ svg {
   outline: 1px solid blue;
 }
 
