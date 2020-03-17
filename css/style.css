@@ -82,6 +82,10 @@ button {
   align-items: center;
 }
 
+.elemk {
+  padding-right: 76px;
+}
+
 .navigation:hover,
 .navigation:focus {
   color: #81b3d2;
@@ -102,6 +106,7 @@ button {
   background-image: url(../img/background-photo.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position-y: -83px;
   padding: 76px 0 0 0;
   font-size: 0px;
   height: 507px;
@@ -122,7 +127,8 @@ button {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 56px;
+  letter-spacing: 0.11px;
+  margin-top: 62px;
   margin-bottom: 38px;
 }
 
@@ -130,7 +136,7 @@ button {
   display: block;
   font-size: 14px;
   font-weight: normal;
-  margin-top: 24px;
+  margin-top: 27px;
 }
 
 .reasons-list {
@@ -139,6 +145,12 @@ button {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.reasons-list-full {
+  width: 100%;
 }
 
 .reasons-list ul {
@@ -164,7 +176,7 @@ button {
 
 .number-1-1 {
   width: 400px;
-  padding: 46px 60px 64px;
+  padding: 46px 49px 57px;
 }
 
 .number-1-1-img {
@@ -175,36 +187,49 @@ button {
   background-size: cover;
 }
 
+.number-2-img {
+  background-image: url(../img/layer-5.png);
+}
+
 .number-2 {
   padding: 49px 49px 65px 48px;
 }
 
 .reasons-div {
   display: flex;
-  padding: 60px 63px 85px 73px;
+  padding: 60px 63px 83px 73px;
 }
 
 .five-reasons {
   width: 489px;
-  line-height: 1.86;
+  line-height: 0.3;
   text-align: center;
   color: #333333;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 56px;
+  margin-bottom: 62px;
 }
 
 .reason-1-2 {
   color: #ffffff;
-  margin-top: 0;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 24px;
 }
 
 .reasons {
   font-size: 21px;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1;
   text-align: center;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.width-r2 {
+  width: 151px;
 }
 
 .reasons-description {
@@ -217,6 +242,7 @@ button {
 }
 
 .reason-description-1-2 {
+  padding-top: 1px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -233,7 +259,13 @@ button {
 .reasons-4,
 .reasons-5 {
   background-color: #eeeeee;
-  padding: 50px 77px 64px 95px;
+  padding: 27px 77px 61px 77px;
+}
+
+.reason-description-3-4-5 {
+  margin-top: 27px;
+  width: 270px;
+  margin-left: -15px;
 }
 
 .main-reasons {
@@ -244,7 +276,13 @@ button {
   display: block;
   position: relative;
   text-align: center;
-  margin: 56px auto 0;
+}
+
+.int-inner {
+  padding-top: 17px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
 }
 
 .interesting {
@@ -260,9 +298,10 @@ button {
   line-height: 1.71;
   color: #333333;
   margin-bottom: 52px;
-  width: 434px;
+  width: 435px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: -5px;
 }
 
 .housing-food-souvenirs {
@@ -272,7 +311,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .description {
@@ -283,28 +322,35 @@ button {
   margin-bottom: 0;
 }
 
+.description-food {
+  width: 290px;
+}
+
 .housing-food-souvenirs-icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 29px;
+  margin-bottom: 35px;
 }
 
 .housing {
   width: 252px;
   margin-right: 133px;
   flex-shrink: 0;
+  line-height: 0.5;
 }
 
 .food {
   width: 284px;
   margin-right: 122px;
   flex-shrink: 0;
+  line-height: 0.5;
 }
 
 .souvenirs {
   width: 273px;
   flex-shrink: 0;
+  line-height: 0.5;
 }
 
 .dialog {
@@ -313,20 +359,23 @@ button {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   width: 568px;
   left: 50%;
+  bottom: 0;
   transform: translateX(-50%);
   background-color: #fff;
   padding: 55px;
+  z-index: 9;
 }
 
 .popup-button {
   background-color: #766357;
   border: 0;
-  padding: 34px 24px 34px 24px;
+  padding: 34px 24px 30px 24px;
   width: 568px;
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
+  margin-top: -5px;
 }
 
 .popup-button:hover,
@@ -344,8 +393,20 @@ button {
   color: rgba(256, 256, 256, 0.3);
 }
 
+@keyframes bounce {
+  from {
+    transform: translate(-50%, 0%);
+  }
+
+  to {
+    transform: translate(-50%, 100%);
+  }
+}
+
+
 .modal-show {
   display: block;
+  animation: bounce linear 0.3s forwards;
 }
 
 .search-hotel {
@@ -358,6 +419,7 @@ button {
 
 .main-label {
   font-weight: bold;
+  margin-top: -5px;
 }
 
 .main-label-in {
@@ -379,7 +441,7 @@ button {
 .main-input {
   background-color: #f2f2f2;
   width: 100%;
-  padding: 13px 39px 13px 13px;
+  padding: 10px 39px 13px 15px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
@@ -431,6 +493,7 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
+
 }
 
 .ac::placeholder {
@@ -462,8 +525,8 @@ button {
   content: "";
 
   position: absolute;
-  top: 18px;
-  left: 198px;
+  top: 16px;
+  left: 199px;
   width: 12px;
   height: 3px;
 
@@ -476,14 +539,14 @@ button {
 
 .plus-child::before,
 .plus-child::after {
-  top: 18px;
+  top: 16px;
   left: 154px;
 }
 
 .minus::before {
   content: "";
   position: absolute;
-  top: 18px;
+  top: 16px;
   left: 122px;
   width: 12px;
   height: 3px;
@@ -491,7 +554,7 @@ button {
 }
 
 .minis-child::before {
-  top: 18px;
+  top: 16px;
   left: 80px;
 }
 
@@ -523,7 +586,7 @@ button {
   background-color: #81b3d2;
   border: 0;
   width: 100%;
-  padding: 17px 0 22px 0;
+  padding: 17px 0 16px 0;
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
@@ -555,7 +618,7 @@ button {
   position: absolute;
   bottom: 0px;
   opacity: 0.9;
-  padding: 36px 101px 36px 132px;
+  padding: 32px 101px 36px 132px;
 }
 
 .social-list {
@@ -600,6 +663,11 @@ button {
   fill: #bdbbbc;
 }
 
+.footer-social {
+  margin-right: 57px;
+
+}
+
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
@@ -615,7 +683,7 @@ button {
 }
 
 .VisitSedona {
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 
 .Websiteby {
@@ -630,11 +698,12 @@ button {
 
 .form {
   display: flex;
-  padding: 31px 73px;
+  padding: 27px 75px 31px 71px;
   background-color: #5496bd;
   background-image: url(../img/background.png);
   background-size: 100%;
   background-position: 0 50%;
+  justify-content: space-between;
 }
 
 .fieldset {
@@ -643,13 +712,14 @@ button {
   padding: 0;
 }
 
-.inf {
-  margin-right: 115px;
+.main-infrastructure-type {
+  display: flex;
 }
 
-.type {
-  margin-right: 394px;
+.inf {
+  margin-right: 119px;
 }
+
 
 .checkbox-name {
   display: flex;
@@ -667,7 +737,7 @@ button {
 }
 
 .infrastructure-type {
-  margin-bottom: 9px;
+  margin-bottom: 23px;
   color: #ffffff;
   font-weight: 600;
   font-size: 16px;
@@ -675,12 +745,12 @@ button {
 }
 
 .filter-range {
-  width: 330px;
+  width: 314px;
   color: #ffffff;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-weight: 600;
   font-size: 16px;
@@ -695,13 +765,14 @@ button {
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  margin-left: -1px;
 }
 
 .price-controls::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 157px;
 
   width: 2px;
   height: 22px;
@@ -731,13 +802,14 @@ button {
 
 .main-min-price {
   position: absolute;
-  top: -7px;
+  top: -9px;
+  left: 19px;
 }
 
 .main-max-price {
   position: absolute;
-  right: 40px;
-  top: -7px;
+  right: 56px;
+  top: -9px;
 }
 
 .min-price span {
@@ -813,7 +885,7 @@ button {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 0 82px;
   padding: 6px 35px;
 
   font-size: 14px;
@@ -899,7 +971,7 @@ button {
 .sorting {
   display: flex;
   justify-content: space-between;
-  padding: 32px 72px;
+  padding: 31px 70px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -907,13 +979,13 @@ button {
   display: flex;
 }
 
-.sorting h3 {
+.sorting h2 {
   padding-right: 49px;
   margin: 0;
 }
 
 .sorting span {
-  padding-top: 3px;
+  padding-top: 7px;
   padding-right: 40px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -927,6 +999,7 @@ button {
   text-align: left;
   border-bottom: 1px dashed #81b3d2;
   margin-right: 33px;
+  margin-top: 5px;
 }
 
 .by-rating {
@@ -949,6 +1022,10 @@ button {
   border-bottom: none;
 }
 
+.up-down {
+  margin: 5px 5px 0 0;
+}
+
 .icon-up-down {
   fill: #cacaca;
 }
@@ -963,7 +1040,7 @@ button {
 }
 
 .icon-down {
-  margin-left: 10px;
+  margin-left: 7px;
   fill: #81b3d2;
   pointer-events: none;
 
@@ -971,7 +1048,7 @@ button {
 
 .sorting-hotels {
   display: flex;
-  padding: 30px 72px;
+  padding: 30px 72px 27px 72px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
   justify-content: space-between;
@@ -989,16 +1066,20 @@ button {
   display: flex;
 }
 
-.amara h3 {
+.amara {
+  margin-top: -4px;
+}
+
+.amara h2 {
   margin: 0;
 }
 
 .amara p {
-  margin: 16px 0;
+  margin: 10px 0 20px;
 }
 
 .amara-span {
-  padding-right: 39px;
+  padding-right: 36px;
 }
 
 .desert-span {
@@ -1010,7 +1091,7 @@ button {
 }
 
 .more-details {
-  padding: 6px 16px;
+  padding: 5px 17px;
   background-color: #81b3d2;
   font-weight: bold;
   line-height: 1.5;
@@ -1040,7 +1121,7 @@ button {
 }
 
 .reservation {
-  padding: 6px 16px;
+  padding: 5px 17px;
   background-color: #766357;
   font-weight: bold;
   line-height: 1.5;
