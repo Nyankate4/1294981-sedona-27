@@ -129,7 +129,7 @@ button {
   text-align: center;
   letter-spacing: 0.11px;
   margin-top: 62px;
-  margin-bottom: 38px;
+  margin-bottom: 27px;
 }
 
 .numbers {
@@ -202,7 +202,6 @@ button {
 
 .five-reasons {
   width: 489px;
-  line-height: 0.3;
   text-align: center;
   color: #333333;
   margin-left: auto;
@@ -456,6 +455,7 @@ button {
   border: solid 2px #e5e5e5;
   background-color: #ffffff;
   outline: none;
+  padding: 8px 39px 11px 13px;
 }
 
 
