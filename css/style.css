@@ -180,6 +180,7 @@ button {
 }
 
 .number-1-1-img {
+  background-color: #c99;
   background-image: url(../img/feature-picture.png);
   flex-grow: 1;
   background-repeat: no-repeat;
@@ -188,6 +189,7 @@ button {
 }
 
 .number-2-img {
+  background-color: #c99;
   background-image: url(../img/layer-5.png);
 }
 
@@ -1140,7 +1142,7 @@ button {
 
 .stars {
   text-align: right;
-  padding-bottom: 47px;
+  padding-bottom: 42px;
 }
 
 .main-rating {
